@@ -1,0 +1,25 @@
+<li class="menu__item">
+  <div class="card">
+    <img
+      src="{{flag}}"
+      alt="{{name}}"
+      class="card__image"
+    />
+    <div class="card__content">
+      <h2 class="card__name">{{name}}</h2>
+      <p class="card__price">
+        Population: {{population}}
+      </p>
+
+      <p class="card__descr">
+        Capital: {{capital}}
+      </p>
+
+      <ul class="tag-list">
+          Languages: {{#each languages}}
+          <li class="tag-list__item">{{this.name}}</li>
+          {{/each}}
+      </ul>
+    </div>
+  </div>
+</li>
